@@ -1,4 +1,6 @@
-/vendor
+*.DS_Store
+*.log
+*.pid
 /.idea
 Homestead.json
 Homestead.yaml
