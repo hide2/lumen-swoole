@@ -39,6 +39,7 @@ php artisan laravels publish
 
 // Start Server
 
+mkdir -p storage/logs
 php bin/laravels start
 ab -k -n 10000 -c 1000 http://localhost:5200/
 ```
@@ -75,6 +76,7 @@ php -m | grep swoole
 
 // Start Server
 
+mkdir -p storage/logs
 php bin/laravels start
 ab -k -n 10000 -c 1000 http://localhost:5200/
 ```
