@@ -55,7 +55,7 @@ sudo yum -y install git
 
 // Install PHP
 
-sudo yum install php71w php71w-devel php71w-cli php71w-common php71w-gd php71w-ldap php71w-mbstring php71w-mcrypt php71w-mysql php71w-pdo php71w-fpm php71w-pecl-redis -y
+sudo yum install php72w php72w-devel php72w-cli php72w-common php72w-gd php72w-ldap php72w-mbstring php72w-mcrypt php72w-mysql php72w-pdo php72w-fpm php72w-pecl-redis -y
 
 
 // Install Composer
