@@ -38,6 +38,7 @@ php artisan laravels publish
 
 
 // Start Server
+
 php bin/laravels start
 ab -k -n 10000 -c 1000 http://localhost:5200/
 ```
