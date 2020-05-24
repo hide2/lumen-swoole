@@ -12,5 +12,7 @@
 */
 
 $router->get('/', function () use ($router) {
+    Log::info(DB::select("select * from user"));
+    Log::info('GET /');
     return 'OK';
 });
