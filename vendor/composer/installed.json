@@ -1464,6 +1464,56 @@
         "homepage": "https://laravel.com"
     },
     {
+        "name": "illuminate/redis",
+        "version": "v7.12.0",
+        "version_normalized": "7.12.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/illuminate/redis.git",
+            "reference": "a536d42fd17618e1d934b424bf4d8653b35d1247"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/illuminate/redis/zipball/a536d42fd17618e1d934b424bf4d8653b35d1247",
+            "reference": "a536d42fd17618e1d934b424bf4d8653b35d1247",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/contracts": "^7.0",
+            "illuminate/support": "^7.0",
+            "php": "^7.2.5"
+        },
+        "suggest": {
+            "ext-redis": "Required to use the phpredis connector (^4.0|^5.0).",
+            "predis/predis": "Required to use the predis connector (^1.0)."
+        },
+        "time": "2020-04-24T09:01:47+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "7.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Illuminate\\Redis\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylor@laravel.com"
+            }
+        ],
+        "description": "The Illuminate Redis package.",
+        "homepage": "https://laravel.com"
+    },
+    {
         "name": "illuminate/session",
         "version": "v7.12.0",
         "version_normalized": "7.12.0.0",
@@ -2993,6 +3043,58 @@
             "phpunit",
             "testing",
             "xunit"
+        ]
+    },
+    {
+        "name": "predis/predis",
+        "version": "v1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nrk/predis.git",
+            "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+            "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.8"
+        },
+        "suggest": {
+            "ext-curl": "Allows access to Webdis when paired with phpiredis",
+            "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+        },
+        "time": "2016-06-16T16:22:20+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Predis\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Daniele Alessandri",
+                "email": "suppakilla@gmail.com",
+                "homepage": "http://clorophilla.net"
+            }
+        ],
+        "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+        "homepage": "http://github.com/nrk/predis",
+        "keywords": [
+            "nosql",
+            "predis",
+            "redis"
         ]
     },
     {

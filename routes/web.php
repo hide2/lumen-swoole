@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Redis;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -12,7 +13,8 @@
 */
 
 $router->get('/', function () use ($router) {
-    Log::info(DB::select("select * from user"));
+    DB::select("select * from user");
     Log::info('GET /');
-    return 'OK';
+    Redis::set('test', 'OK');
+    return Redis::get('test');
 });
