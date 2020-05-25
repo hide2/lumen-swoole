@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Redis;
 */
 
 $router->get('/', function () use ($router) {
-    DB::select("select * from user");
     Log::info('GET /');
     Redis::set('test', 'OK');
     return Redis::get('test');
+});
+
+$router->get('/tables', function () use ($router) {
+    Log::info('GET /tables');
+    return DB::select("show tables");
 });
